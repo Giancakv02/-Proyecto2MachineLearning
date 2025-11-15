@@ -10,6 +10,7 @@ TRAIN_META = os.path.join(DATA_DIR, "movies_train.csv")
 TEST_META = os.path.join(DATA_DIR, "movies_test.csv")
 
 OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
+APP_ARTIFACTS_DIR = os.path.join(BASE_DIR, "app_artifacts")
 
 FEATURES_RAW = os.path.join(OUTPUT_DIR, "features_raw.npy")
 FEATURES_PCA = os.path.join(OUTPUT_DIR, "features_reduced_pca.npy")
@@ -40,6 +41,11 @@ DBSCAN_MIN_SAMPLES = 5
 PCA_MEAN_NPY = os.path.join(OUTPUT_DIR, "pca_mean.npy")
 PCA_COMPONENTS_NPY = os.path.join(OUTPUT_DIR, "pca_components.npy")
 TRAIN_META_FILTERED_CSV = os.path.join(OUTPUT_DIR, "train_meta_used.csv")
+FEATURES_PCA_FALLBACK = os.path.join(APP_ARTIFACTS_DIR, "features_reduced_pca.npy")
+COORDS_2D_FALLBACK = os.path.join(APP_ARTIFACTS_DIR, "coords2d_pca.npy")
+PCA_MEAN_NPY_FALLBACK = os.path.join(APP_ARTIFACTS_DIR, "pca_mean.npy")
+PCA_COMPONENTS_NPY_FALLBACK = os.path.join(APP_ARTIFACTS_DIR, "pca_components.npy")
+TRAIN_META_FILTERED_CSV_FALLBACK = os.path.join(APP_ARTIFACTS_DIR, "train_meta_used.csv")
 
 SUBMISSION_CSV = os.path.join(OUTPUT_DIR, "submission.csv")
 
